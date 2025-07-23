@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tor Relay Node</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <style>
+    :root {
+      --tor-purple: #7D4698;
+      --tor-green: #68B030;
+      --tor-grey: #333A41;
+      --bg-light: #F8F9FA;
+    }
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      color: var(--tor-grey);
+      background: var(--bg-light);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--tor-purple);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 10px 0 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    h2 {
+      color: var(--tor-purple);
+      font-size: 24px;
+      margin-top: 1.5em;
+    }
+    a {
+      color: var(--tor-purple);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .notice {
+      border-left: 4px solid var(--tor-green);
+      background: white;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+  </style>
+  
+</head>
+<body>
+
+<header>
+  <h1>This Server Is a Tor Relay Node</h1>
+</header>
+
+<main>
+  <h2>🧅 What Does That Mean?</h2>
+  <p>This server participates in the Tor network as an <strong>intermediate relay</strong>. Its job is to route encrypted traffic within Tor to support privacy and decentralization.</p>
+
+  <h2>🔐 No Traffic Exits Here</h2>
+  <p><strong>This is <em>not</em> an exit node.</strong> No user traffic leaves this machine to the public Internet. All data remains encrypted and is forwarded only to other Tor relays.</p>
+
+  <div class="notice">
+    <strong>If you are a network administrator or abuse desk:</strong><br>
+    This is a non-exit relay and does <em>not</em> generate outgoing Internet traffic from Tor users. Please consult Tor Project documentation before taking any action.
+  </div>
+
+  <h2>📡 Relay Family</h2>
+  <p>This server is part of a Tor relay family — a group of relays operated by the same entity and publicly declared.</p>
+  <p>
+    You can view all members of this relay family on 
+    <a href="https://metrics.torproject.org/rs.html#search/family:2CE8A4286D5AB7A2CC28A33304227DF976F22E5A" target="_blank" rel="noopener">
+      Tor Metrics – Relay Search
+    </a>.
+  </p>
+  <p>
+    <strong>Family ID:</strong><br />
+    <code>2CE8A4286D5AB7A2CC28A33304227DF976F22E5A</code>
+  </p>
+
+  <h2>📘 Learn More</h2>
+  <ul>
+    <li><a href="https://community.torproject.org/relay/" target="_blank" rel="noopener">Tor Relay Operator Guide</a></li>
+    <li><a href="https://support.torproject.org/relay-operators/" target="_blank" rel="noopener">Relay Operator Support FAQ</a></li>
+  </ul>
+
+  <h2>🤝 Why We Run a Tor Relay</h2>
+  <p>The Tor network is essential for digital freedom. It enables users to browse and communicate without being easily tracked or censored. By operating this relay, we support online privacy, press freedom, and human rights.</p>
+</main>
+
+<footer>
+  Informational page for this Tor relay — No services are offered from this IP other than the Tor relay and this page.
+</footer>
+
+</body>
+</html>
